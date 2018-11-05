@@ -281,7 +281,7 @@ testJ \(.*suites\.CaseLetters\.testJ\) \.\.\. OK
 
     def testPDFReporting(self):
         pdfcontents = self._get_file_report("pdf")
-        self.assertEquals( '%PDF-1.3', pdfcontents.splitlines()[0] )
+        self.assertEquals( '%PDF-1.4', pdfcontents.splitlines()[0] )
 
     def testGlob(self):
         args = _testoob_args(options=["-v", "--glob=*Database*"], tests=["CaseNames"])
